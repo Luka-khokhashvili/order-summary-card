@@ -1,0 +1,237 @@
+:root {
+    /* Primary Colors */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* Neutral colors */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    /* Hover color */
+    --hover-blue: hsla(245, 83%, 68%, 1);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--pale-blue);
+}
+
+.background-pattern-desktop {
+    position: absolute;
+    width: 100%;
+    height: 22.76vw;
+    z-index: -9999;
+}
+
+.background-pattern-mobile {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: -9999;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-div {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    width: 28.25%;
+    height: 72.444444%;
+}
+
+.hero-image {
+    width: 100%;
+    height: 31.563845050215207%;
+    border-radius: 20px 20px 0 0;
+}
+
+.main-title {
+    color: var(--dark-blue);
+    text-align: center;
+    /* font-size: 1.75rem; */
+    font-size: 1.944vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 8.456241% auto 3.439024% auto;
+}
+
+.info {
+    color: var(--desaturated-blue);
+    text-align: center;
+    /* font-size: 1rem; */
+    font-size: 1.111vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.625rem; /* 162.5% */
+    width: 78.66666666666666%;
+    margin-top: 0;
+    margin-bottom: 3.86944%;
+}
+
+.plan-container {
+    background-color: var(--very-pale-blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 78.66666666666666%;
+    height: 14.060258249641318%;
+    border-radius: 11px;
+}
+
+.plan-text-div {
+    display: inline-flex;
+    /* height: 48px; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6px;
+    flex-shrink: 0;
+    margin-right: 26.55367231638418%;
+    margin-left: 5.649717514124294%;
+}
+
+.music-icon {
+    width: 16.559322%;
+    /* height: 48.97959183673469%; */
+}
+
+.plan-heading {
+    color: var(--dark-blue);
+    font-size: 1.111vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 0;
+}
+
+.plan-secondary {
+    color: var(--desaturated-blue);
+    /* font-size: 1rem; */
+    font-size: 1.111vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.plan-link {
+    color: var(--bright-blue);
+    /* font-size: 0.875rem; */
+    font-size: 0.972vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.payment-button {
+    background-color: var(--bright-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 78.66666666666666%;
+    height: 7.173601147776183%;
+    margin: 6.591105% auto;
+    border-radius: 11px;
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+
+    color: #FFF;
+    /* text-align: center; */
+    /* font-size: 0.9375rem; */
+    font-size: 1.042vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.cancel-button {
+    color: var(--desaturated-blue);
+    /* font-size: 15px; */
+    font-size: 0.972vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.plan-link:hover, .cancel-button:hover {
+    color: var(--hover-blue);
+    text-decoration-line: none;
+}
+
+.payment-button:hover {
+    background-color: var(--hover-blue);
+}
+
+
+@media only screen and (max-width: 375px) {
+    .background-pattern-desktop {
+        display: none;
+    }
+    
+    .background-pattern-mobile {
+        display: block;
+    }
+
+    .main-div {
+        width: 87.2%;
+    }
+
+    .main-title {
+        font-size: 1.75rem;
+    }
+
+    .info {
+        font-size: 1rem;
+        width: 85.666667%;
+    }
+
+    .plan-container, .payment-button {
+        width: 87.666667%;
+    }
+
+    .music-icon {
+        width: auto;
+    }
+
+    .plan-text-div {
+        margin-right: 18.553672%;
+        margin-left: 4.649718%;
+    }
+
+    .plan-heading, .plan-secondary {
+        font-size: 1rem;
+    }
+
+    .plan-link {
+        font-size: 0.875rem;
+    }
+
+    .payment-button, .cancel-button {
+        font-size: 0.9375rem;
+    }
+}
