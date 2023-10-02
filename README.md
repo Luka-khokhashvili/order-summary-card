@@ -13,10 +13,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
-
 
 ### Screenshot
 
@@ -39,8 +36,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ### What I learned
 
 Using media query and responsive units properly. making clean hover effects and styleing pages more effeciently.
-
-To see how you can add code snippets, see below:
 
 Also i started building cleanier css code
 ```css
